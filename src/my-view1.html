@@ -1,0 +1,62 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-icon/icons-icon.html">
+<link rel="import" href="../bower_components/iron-icons/icons-icons.html">
+<link rel="import" href="../bower_components/iron-icons/social-icons.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-progress/paper-progress.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+      }
+      td {
+        padding-right: 10px; 
+        margin: auto;
+      }
+    </style>
+
+    <div class="card">
+      <table>
+        <tr>
+        <td>
+          <div class="circle">
+            <iron-icon icon="social:person"></iron-icon>
+          </div>
+        </td>
+        <td>
+          <h1> a bit about me </h1>
+        </td>
+        </tr>
+      </table>
+
+      <p> i'm wendy, a left-handed, lizard-loving lady living in san francisco, ca. in my free time, i like to learn cool things and acquire new skills. some of my favorite skills are software development, following recipes on the internet, and writing haikus. right now i'm learning guitar, hebrew, and how to bike on city streets. there are so many things i'd still like to learn, like how to play piano, grow vegetables, and motivate myself to read more books.</p>
+
+    </div>
+      
+      
+
+      
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1'
+    });
+  </script>
+</dom-module>

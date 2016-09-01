@@ -1,0 +1,55 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view3">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+      }
+      td {
+        padding-right: 10px; 
+        margin: auto;
+      }
+    </style>
+
+    <div class="card">
+      <table>
+        <tr>
+        <td>
+          <div class="circle">
+            <iron-icon icon="social:public"></iron-icon>
+          </div>
+        </td>
+        <td>
+          <h1> work experience </h1>
+        </td>
+        </tr>
+      </table>
+      
+      <p>
+        i graduated from <span id="highlight">brown university</span> in may of 2015 with a concentration in computer science. while in school, i took full advantage of the open curriculum by taking classes in 14 departments and assistant teaching 4 courses; i even designed my own history course! some of my favorite cs courses were data science, humanity-centered robotics, and intro to computer systems. some of my favorite non-cs courses were logic (philosophy), material culture in early america (history), and pathology of power (public health).  
+      </p>
+    
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view3'
+    });
+  </script>
+</dom-module>

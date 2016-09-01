@@ -1,0 +1,145 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-icon/icons-icon.html">
+<link rel="import" href="../bower_components/iron-icons/icons-icons.html">
+<link rel="import" href="../bower_components/iron-icons/social-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-progress/paper-progress.html">
+<link rel="import" href="my-icons.html">
+
+<dom-module id="my-view4">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+      }
+      td {
+        padding-right: 10px; 
+        margin: auto;
+      }
+      .cardBox {
+        overflow: auto;
+        margin: auto;
+      }
+      .cardBox > paper-card {
+        float:left;
+        max-width: 30%;
+        margin: 5px;
+      }
+      #highlight {
+        color: var(--app-primary-color);
+        font-weight: 700;
+        font-size: 18px;
+      }
+    </style>
+
+    <div class="card">
+      <table>
+        <tr>
+        <td>
+          <div class="circle">
+            <iron-icon icon="build"></iron-icon>
+          </div>
+        </td>
+        <td>
+          <h1> stuff i've built </h1>
+        </td>
+        </tr>
+      </table>
+      
+      <div class="cardBox">
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Call Your Grandma</span><br>
+          An progressive web application to set up text reminders to call your grandparents. Built with Polymer on the front end, Firebase for hosting, data storage, and auth, and Twilio for messaging.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Beam++</span><br>
+          A telepresence robot with a movable arm and swiveling neck. The driver controls movement with a remote in their hand and sensor on their head for each element, respectively. Uses Arduino.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Yelp Suggestion Engine</span><br>
+          A recommendation server that offers related businesses based on an input. Uses the clean Yelp Dataset for training and had a CLI for interaction. Written in Python, uses kmeans clustering.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+      </div>
+
+      <div class="cardBox">
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Redfin Events</span><br>
+          A back end posting form and front end viewing portal for all classes and events from Redfin. Built with Java, JSP, Postgres, dojo, and HTML/CSS. Integrated with the EventBrite API.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Musical Forum Ticketing</span><br>
+          A ticketing platform for the Musical Forum student-run musical theater group at Brown University. Complete with a back end CMS and front end viewing portal. Built with Node, Express, sqlite3, and Mustache.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+
+      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+        <div class="card-content">
+          <span id="highlight">Tetris</span><br>
+          A basic implementation of the arcade classic, Tetris. This was built fully in Java using the java swing library. This is my favorite piece of software because it is the first program I wrote from scratch.
+        </div>
+        <div class="card-actions">
+          <paper-button>TEST</paper-button>
+          <paper-button>GITHUB</paper-button>
+        </div>
+      </paper-card>
+      </div>
+    
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view4'
+    });
+  </script>
+</dom-module>
+
+       <!--    <a href="www.twitter.com/wmginsberg"><paper-icon-button href="www.twitter.com/wmginsberg" src="../images/twitter_logo_blue.svg"></paper-icon-button></a>
+          <a href="www.github.com/wmginsberg"><paper-icon-button href="www.github.com/wmginsberg" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"></paper-icon-button></a> -->
