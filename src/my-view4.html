@@ -37,7 +37,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       .cardBox > paper-card {
         float:left;
-        max-width: 30%;
+        max-width: 45%;
         margin: 5px;
       }
       #highlight {
@@ -56,81 +56,92 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </div>
         </td>
         <td>
-          <h1> stuff i've built </h1>
+          <h1> stuff i'm building </h1>
         </td>
         </tr>
       </table>
       
       <div class="cardBox">
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+      <paper-card image="http://webcomponents.org/img/stories/a-quick-polymer-intro.png" alt="Polymer">
+        <div class="card-content">
+          <span id="highlight">Hack with Polymer</span><br>
+          An progressive web application to teach people how to hack with Polymer. Complete with information on getting started, as well as automated system for getting help when you get stuck. Used for University Hackathons.
+        </div>
+        <div class="card-actions">
+          <a href="https://www.hackwithpolymer.com"><paper-button>VIEW</paper-button></a>
+        </div>
+      </paper-card>
+
+      <paper-card image="http://www.cultureblues.com/wp-content/uploads/2011/07/video-robyn-call-your-girlfriend.png" alt="Call Your Grandma">
         <div class="card-content">
           <span id="highlight">Call Your Grandma</span><br>
           An progressive web application to set up text reminders to call your grandparents. Built with Polymer on the front end, Firebase for hosting, data storage, and auth, and Twilio for messaging.
         </div>
         <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
-        </div>
-      </paper-card>
-
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
-        <div class="card-content">
-          <span id="highlight">Beam++</span><br>
-          A telepresence robot with a movable arm and swiveling neck. The driver controls movement with a remote in their hand and sensor on their head for each element, respectively. Uses Arduino.
-        </div>
-        <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
-        </div>
-      </paper-card>
-
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
-        <div class="card-content">
-          <span id="highlight">Yelp Suggestion Engine</span><br>
-          A recommendation server that offers related businesses based on an input. Uses the clean Yelp Dataset for training and had a CLI for interaction. Written in Python, uses kmeans clustering.
-        </div>
-        <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
+          <a href="https://github.com/wmginsberg/call-your-grandma"><paper-button>GITHUB</paper-button></a>
         </div>
       </paper-card>
       </div>
 
       <div class="cardBox">
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+
+      <paper-card image="https://news.brown.edu/files/styles/horizontal/public/article_images/Telepresence1_0.jpg?itok=OMi5KnMs" alt="Beam++">
         <div class="card-content">
-          <span id="highlight">Redfin Events</span><br>
-          A back end posting form and front end viewing portal for all classes and events from Redfin. Built with Java, JSP, Postgres, dojo, and HTML/CSS. Integrated with the EventBrite API.
+          <span id="highlight">Beam++</span><br>
+          A telepresence robot with a movable arm and swiveling neck. The driver controls movement with a remote in their hand and sensor on their head for each element, respectively. Uses Arduino.
         </div>
         <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
+          <a href="http://wendybots.tumblr.com/"><paper-button>TUMBLR DOCS</paper-button></a>
+          <a href="https://news.brown.edu/articles/2014/12/telepresence"><paper-button>NEWS</paper-button></a>
         </div>
       </paper-card>
 
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+      <paper-card image="http://chiseledgym.com/wp-content/uploads/2014/11/yelp-logo.png" alt="Yelp">
+        <div class="card-content">
+          <span id="highlight">Yelp Suggestion Engine</span><br>
+          A recommendation server that offers related businesses based on an input. Uses the clean Yelp Dataset for training and had a CLI for interaction. Written in Python, uses kmeans clustering.
+        </div>
+        <div class="card-actions">
+          <a href="https://github.com/wmginsberg/yelp-search"><paper-button>GITHUB</paper-button></a>
+        </div>
+      </paper-card>
+      </div>
+
+
+      <div class="cardBox">
+      <paper-card image="http://www.browndailyherald.com/wp-content/uploads/2013/11/smyth_hair_co-Danielle-Perelman1.jpg" alt="Musical Forum">
         <div class="card-content">
           <span id="highlight">Musical Forum Ticketing</span><br>
           A ticketing platform for the Musical Forum student-run musical theater group at Brown University. Complete with a back end CMS and front end viewing portal. Built with Node, Express, sqlite3, and Mustache.
         </div>
         <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
+          <a href="https://github.com/mjhart/MusicalForum"><paper-button>GITHUB</paper-button></a>
         </div>
       </paper-card>
 
-      <paper-card image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+      <paper-card image="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/18/10/tetris.jpg" alt="Tetris">
         <div class="card-content">
           <span id="highlight">Tetris</span><br>
           A basic implementation of the arcade classic, Tetris. This was built fully in Java using the java swing library. This is my favorite piece of software because it is the first program I wrote from scratch.
         </div>
         <div class="card-actions">
-          <paper-button>TEST</paper-button>
-          <paper-button>GITHUB</paper-button>
+          <paper-button>DOWNLOAD</paper-button>
+          <a href="https://github.com/wmginsberg/tetris-app"><paper-button>GITHUB</paper-button></a>
         </div>
       </paper-card>
       </div>
-    
+
+      <div class="cardBox">
+        <paper-card image="http://massrealestatelawblog.com/wp-content/uploads/sites/9/2013/02/redfin-logo-tag-web.png" alt="Redfin">
+        <div class="card-content">
+          <span id="highlight">Redfin Events</span><br>
+          A back end posting form and front end viewing portal for all classes and events from Redfin. Built with Java, JSP, Postgres, dojo, and HTML/CSS. Integrated with the EventBrite API.
+        </div>
+        <div class="card-actions">
+          <a href="https://www.redfin.com/buy-a-home/classes-and-events"><paper-button>VIEW</paper-button></a>
+        </div>
+      </paper-card>
+      </div>
     </div>
   </template>
 

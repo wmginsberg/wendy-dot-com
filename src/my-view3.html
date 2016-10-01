@@ -16,35 +16,60 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style include="shared-styles">
       :host {
         display: block;
-        padding: 10px;
         --app-primary-color: #4285f4;
         --app-secondary-color: black;
       }
-      td {
-        padding-right: 10px; 
-        margin: auto;
+
+      img.old {
+        width: 150px;
+      }
+      img.current {
+        height: 100px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 15px;
+      }
+      li {
+        border: 1px solid black;
+        padding: 15px;
+        background-color: white;
+        margin-bottom: 15px;
+      }
+      h1,h2,h3,h4 {
+        margin: 0px;
+        padding: 0px;
       }
     </style>
 
-    <div class="card">
-      <table>
-        <tr>
-        <td>
-          <div class="circle">
-            <iron-icon icon="social:public"></iron-icon>
-          </div>
-        </td>
-        <td>
-          <h1> work experience </h1>
-        </td>
-        </tr>
-      </table>
+    <!-- <div class="card"> -->
       
-      <p>
-        i graduated from <span id="highlight">brown university</span> in may of 2015 with a concentration in computer science. while in school, i took full advantage of the open curriculum by taking classes in 14 departments and assistant teaching 4 courses; i even designed my own history course! some of my favorite cs courses were data science, humanity-centered robotics, and intro to computer systems. some of my favorite non-cs courses were logic (philosophy), material culture in early america (history), and pathology of power (public health).  
-      </p>
+      <ul>
+        <li>
+
+            <img class="current" src="../images/google-logo-png.png">
+            <h1> Associate Product Manager </h1>
+            <h2> August 2015 - Present </h2>
+        </li>
+        <li>
+            <img class="old" src="../images/brown-logo-png.png">
+            <h3> Teaching Assistant </h3>
+            <h4> August 2013 - May 2015 </h4>
+        </li>
+        <li>
+            <img class="old" src="../images/redfin-logo-png.png">
+            <h3> Software Developer Intern </h3>
+            <h4> August 2013 - May 2015 </h4>
+        </li>
+        <li>
+            <img class="old" src="../images/dreamit-logo.jpg">
+            <h3> Developer &amp; Design Intern </h3>
+            <h4> August 2013 - May 2015 </h4>
+        </li>
+      </ul>
+
     
-    </div>
+    <!-- </div> -->
   </template>
 
   <script>
